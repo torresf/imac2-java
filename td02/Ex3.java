@@ -2,27 +2,58 @@ import java.util.regex.*; // Importe un module java : Regex
 
 public class Ex3 {
 
-	private static int[] checkIp(String ipv4) {
+	private static boolean isIP(String str) {
+		Pattern p = Pattern.compile("^([0-9]{1,3})\\.([0-9]{1,3})\\.([0-9]{1,3})\\.([0-9]{1,3})$");
+		Matcher m = p.matcher(str);
+		boolean b = m.matches();
+		if (!b) {
+			return false;
+		}
+		boolean isValid = true;
+		for (int i=1; i <= m.groupCount(); i++) {
+			if (Integer.parseInt(m.group(i)) > 255) {
+				isValid = false;
+			}
+		}
+		return isValid;
+	}
 
-		int tab[] = new int[4];
-		// while(m.find()) {
-		// 	m.group();
-		// }
+	public static boolean isNumber(String s) {
+		Pattern p = Pattern.compile("(\\D)");
+		Matcher m = p.matcher(s);
+		return !m.find();
 	}
 
 	public static void main(String[] args) {
+		
+		// Question 2
+		System.out.println("Question 2 : isNumber ?");
+		for (String str : args) {
+			if (Ex3.isNumber(str)) {
+				System.out.println(str);		
+			}
+		}
+
+		System.out.println();
+		System.out.println("Question 3 : Display numbers at the end of strings");
+		// Question 3 
 		Pattern p = Pattern.compile("(\\D+)?\\d+");
-		for (String value: args) {
-			Matcher m = p.matcher(value);
+		for (String str : args) {
+			Matcher m = p.matcher(str);
 			boolean b = m.matches();
 			if (b) {
-				System.out.print(value.replaceAll("\\D", ""));
+				System.out.print(str.replaceAll("\\D", ""));
 			}
 		}
 		System.out.println();
 
-		System.out.println(this.checkIp("10.1.255.0"));
+		// Question 4
+		System.out.println();
+		System.out.println("Question 4 : Is an IPv4 ?");
+		for (String str : args) {
+			System.out.print(str + " : ");
+			System.out.println(Ex3.isIP(str));
+		}
 	};
-
 
 }

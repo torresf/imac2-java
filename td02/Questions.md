@@ -24,7 +24,7 @@ s8.toUpperCase() renvoie la nouvelle chaine de caractère sans modifier s8
 
 ## Exercice 2
 
-`javac -sourcepath src/fr/umlv/morse -d bin/fr/umlv/morse Morse.java`
+`javac -d bin/fr/umlv/morse src/fr/umlv/morse/Morse.java`
 `java -cp bin/fr/umlv/morse Morse Ceci est drole`
 1. 
 java.lang.StringBuilder est une séquence mutable de chaine de caractère.
@@ -44,5 +44,5 @@ Le + va entrainer beaucoup trop d'instructions au compilateur pour concaténer l
 ## Exercice 3
 1. 
 `java.util.regex.Pattern` est une représentation compilé d'une expression régulière.
-Sa méthode _compile_ permet justement de compiler la chaine de caractère (regex) en Pattern
+Sa méthode `compile` permet justement de compiler la chaine de caractère (regex) en Pattern
 `java.util.regex.Matcher` va interpréter un Pattern et le comparer à une chaine de caractère.

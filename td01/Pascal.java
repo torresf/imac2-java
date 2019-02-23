@@ -22,6 +22,6 @@ public class Pascal {
 	}
 
 	// Comment peut-on expliquer la différence de vitesse ?
-	// Le code java est plus rapide car il bénéficie de l'optimisation du JVM (JAVA Virtual Machine)
+	// -> Le code java est plus rapide car il bénéficie de l'optimisation du JVM (JAVA Virtual Machine)
 
 }
