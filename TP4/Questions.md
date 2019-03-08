@@ -13,7 +13,7 @@ public String toString() {
 ```
 - `get + Ctrl + Space` : génère un getter
 - `set + Ctrl + Space` : génère un setter
-- Cliquer sur le bouton `Generate constructor using fields...` et séléctionner le champ foo
+- Cliquer sur le bouton `Generate constructor using fields...` et sélectionner le champ foo
 - `Alt + Shift + R` : Sélectionne toutes les occurences dans le fichier pour tout modifier d'un coup
 - `Alt + Shift + L` : permet de créer une variable à partir de la sélection
 - `Ctrl + 1` : instancie une nouvelle variable
