@@ -19,7 +19,7 @@ public String toString() {
 - `Ctrl + 1` : instancie une nouvelle variable
 - `Ctrl + click` sur le nom d'un classe renvoie à sa déclaration ou son implémentation.
 - `Ctrl + click` sur super.toString() renvoie à la déclaration de toString().
-- `Ctrl + Shift + G` : Fait une recherche du champ sélectionné pour savoir dans quelles méthode il est utilisé.
+- `Ctrl + Shift + G` : Fait une recherche du champ sélectionné pour savoir dans quelles méthodes il est utilisé.
 - `Ctrl + Shift + O` importe automatiquement les paquet manquants.
 
 ## Exercice 2
