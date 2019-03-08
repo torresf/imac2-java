@@ -23,9 +23,14 @@ public class ArrayShoppingCartTest {
 		System.out.println();
 		System.out.println("freeShoppingCart");
 		FreeShoppingCart freeShoppingCart = new FreeShoppingCart();
-		freeShoppingCart.add(new Book("Titre1a", "Author1"));
-		freeShoppingCart.add(new Book("Titre2aaa", "Author2"));
-		freeShoppingCart.add(new Book("Titre3aa", "Author3"));
+		Book b1 = new Book("Titre1a", "Author1");
+		Book b2 = new Book("Titre2aaa", "Author2");
+		Book b3 = new Book("Titre3aa", "Author3");
+		freeShoppingCart.add(b1);
+		freeShoppingCart.add(b2);
+		freeShoppingCart.add(b3);
+		freeShoppingCart.add(b3);
+		freeShoppingCart.add(b3);
 		
 		System.out.println("\n==> Without iterator");
 		System.out.println(freeShoppingCart.longestTitle().toString());
@@ -35,6 +40,16 @@ public class ArrayShoppingCartTest {
 		
 		System.out.println("\n==> With for(:)");
 		System.out.println(freeShoppingCart.longestTitleFor().toString());
+		
+		System.out.println();
+		
+		freeShoppingCart.display();
+		System.out.println("removeFirstOccurence : b3");
+		freeShoppingCart.removeFirstOccurence(b3);
+		freeShoppingCart.display();
+		System.out.println("removeFirstOccurenceIterator : b3");
+		freeShoppingCart.removeFirstOccurenceIterator(b3);
+		freeShoppingCart.display();
 		
 	}
 

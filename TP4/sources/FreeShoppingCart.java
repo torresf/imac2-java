@@ -11,7 +11,14 @@ public class FreeShoppingCart {
 	public void add(Book book) {
 		books.add(book);
 	}
-
+	
+	public void display() {
+		System.out.println("display ArrayList : ");
+		for (int i = 0; i < books.size(); i++) {
+			System.out.println("	- " + books.get(i).toString());
+		}
+	}
+	
 	public Book longestTitle() {
 		int index = -1;
 		int maxLength = books.get(0).getTitle().length();
@@ -54,7 +61,17 @@ public class FreeShoppingCart {
 		return bookToReturn;
 	}
 	
-	public void removeFirstOccurence() {
-		books.remove(0);
+	public void removeFirstOccurence(Book b) {
+		books.remove(b);
+	}
+	
+	public void removeFirstOccurenceIterator(Book b) {
+		Iterator<Book> it = books.iterator();
+		while (it.hasNext()) {
+			if (it.next().equals(b)) {
+				it.remove();
+				break;
+			}
+		}
 	}
 }
