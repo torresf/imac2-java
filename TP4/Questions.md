@@ -15,7 +15,16 @@ public String toString() {
 	return super.toString();
 }
 ```
-- 
+- `get + Ctrl + Space` : génère un getter
+- `set + Ctrl + Space` : génère un setter
+- Cliquer sur le bouton `Generate constructor using fields...` et séléctionner le champ foo
+- `Alt + Shift + R` : Sélectionne toutes les occurences dans le fichier pour tout modifier d'un coup
+- `Alt + Shift + L` : permet de créer une variable à partir de la sélection
+- `Ctrl + 1` : instancie une nouvelle variable
+- `Ctrl + click` sur le nom d'un classe renvoie à sa déclaration ou son implémentation.
+- `Ctrl + click` sur super.toString() renvoie à la déclaration de toString().
+- `Ctrl + Shift + G` : Fait une recherche du champ sélectionné pour savoir dans quelles méthode il est utilisé.
+- `Ctrl + Shift + O` importe automatiquement les paquet manquants.
 
 
 ## Exercice 3
