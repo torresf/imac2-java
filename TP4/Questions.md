@@ -20,11 +20,11 @@ public String toString() {
 - `Ctrl + click` sur le nom d'un classe renvoie à sa déclaration ou son implémentation.
 - `Ctrl + click` sur super.toString() renvoie à la déclaration de toString().
 - `Ctrl + Shift + G` : Fait une recherche du champ sélectionné pour savoir dans quelles méthodes il est utilisé.
-- `Ctrl + Shift + O` importe automatiquement les paquet manquants.
+- `Ctrl + Shift + O` importe automatiquement les paquets manquants.
 
 ## Exercice 2
 1. 
-Si chaque ArrayShoppingCart a un nombre maximum de livre différent, 
+Si chaque ArrayShoppingCart a un nombre maximum de livres différents, 
 il n'est pas intéressant de stocker ce nombre dans un champ statique.
 
 ## Exercice 3
