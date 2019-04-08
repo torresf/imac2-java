@@ -1,12 +1,12 @@
 
 public class Apple extends Fruit {
 	private int weight;
-	private String name;
+	private AppleKind name;
 	
-	public Apple(int w, String n) {
+	public Apple(int w, AppleKind kind) {
 		super();
 		weight = w;
-		name = n;
+		name = kind;
 	}
 
 	public int getWeight() {
@@ -17,7 +17,7 @@ public class Apple extends Fruit {
 		return weight / 2;
 	}
 
-	public String getName() {
+	public AppleKind getName() {
 		return name;
 	}
 
