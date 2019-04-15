@@ -5,6 +5,7 @@
 La classe Link doit être accessible seulement par les classes du package. Il faut donc déclarer la visibilité de la classe en package: `class Link`, et la visibilité des champs en `private`.
 
 2.
+`javac -d classes src/fr/umlv/data/Link`
 `java fr.umlv.data.Link`
 
 ## Exercice 2
@@ -20,3 +21,4 @@ En java, on aime pas les cast car on force l'object à changer de classe sans co
 L'intérêt du d'utiliser un type paramétré nous permettra de ne pas utiliser de cast et d'utiliser des méthode de l'object de la liste sans se soucier de son type.
 
 2.
+`contains` prend un Object en paramètre et pas un T ou un E car deux objets peuvent être similaires sans avoir le même type.
