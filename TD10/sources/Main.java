@@ -9,6 +9,7 @@ public class Main {
 		var list = List.of("hello", "world", "hello", "lambda");
 		System.out.println(count(list, "hello"));  // 2
 		System.out.println(count2(list, "hello"));  // 2
+		System.out.println(count3(list, "hello"));  // 2
 		System.out.println(upperCase(list));
 		System.out.println(upperCase4(list));
 	}
@@ -39,8 +40,8 @@ public class Main {
 		return l.stream().map(str -> str.toUpperCase()).collect(Collectors.toList());
 	}
 
-	static private long count3(List<String> l) {
-	    return l.stream().filter(str -> s.equals(str)).count();
+	static private long count3(List<String> l, String s) {
+	    return l.stream().filter(str -> s.equals(str)).mapToLong(str -> 1).count();
 	}
 
 }
