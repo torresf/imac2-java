@@ -6,7 +6,7 @@ La classe Link doit être accessible seulement par les classes du package. Il fa
 
 2.
 `javac -d classes src/fr/umlv/data/Link`
-`java fr.umlv.data.Link`
+`java -cp classes fr.umlv.data.Link`
 
 ## Exercice 2
 1.
