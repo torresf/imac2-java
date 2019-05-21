@@ -5,16 +5,16 @@ public class Qcm {
 		ColoredPixel cp = new ColoredPixel();
 		Pixel pBis = cp;
 
-		System.out.println("pBis instanceof ColoredPixel");
+		System.out.println("pBis instanceof ColoredPixel :");
 		System.out.println((pBis instanceof ColoredPixel));
 
-		System.out.println("(cp instanceof Pixel)");
+		System.out.println("(cp instanceof Pixel) :");
 		System.out.println((cp instanceof Pixel));
 
-		System.out.println("(p instanceof ColoredPixel)");
+		System.out.println("(p instanceof ColoredPixel) :");
 		System.out.println((p instanceof ColoredPixel));
 
-		System.out.println("(pBis instanceof Pixel)");
+		System.out.println("(pBis instanceof Pixel) :");
 		System.out.println((pBis instanceof Pixel));
 	};
 
